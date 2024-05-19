@@ -11,7 +11,7 @@ Follow the following steps after Starting Apache and MySQL in XAMPP:
 
 Creating database:
 
-4th Step: So, for now, Open a browser and go to URL “http://localhost/phpmyadmin/”
+4th Step: Open a browser and go to URL “http://localhost/phpmyadmin/”
 5th Step: After that, Click on the databases tab
 6th Step: So, Create a database name it as “paragoncinemadb” and then click on the import tab
 7th Step: Click on browse file and select “paragoncinemadb.sql” file which is inside the “DATABASE” folder
