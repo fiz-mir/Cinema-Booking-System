@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    text-align: left;
+}
+h6{
+    text-align: left;
+}
+p{
+    text-align: left;
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    color: #FFB6C1;
+}
+
+body{
+    background-color: #111111;
+    color: #FFFFFF;
+}
+span{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#first-section {
+    background-color: #111111;
+    
+}
+#second-section {
+    background-color: #1D1D1D;
+}
+.btn-primary{
+    background: #FF69B4;
+}
+
+.trailer-btn{
+    border-color: #AF1964;
+    color: #ffffff;
+    background-color: #FFB6C1;
+}
+.trailer-btn:hover{
+    background-color: #66CECF;
+    border-color: #2d9596;
+    color: #fff;
+}
+
+.showtime-btn{
+    background: #FFB6C1;
+    color: #111111;
+    font-weight: bold;
+}
+
+.showtime-btn:hover{
+    background: #FF9AA2;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#trailer-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#trailer-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#trailer-iframe {
+    width: 560px;
+  height: 315px;
+}
+
+#close-trailer {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+
+
+@media (max-width: 767px) {
+    #trailer-iframe {
+        width: 100%;
+        height: auto;
+    }
+}

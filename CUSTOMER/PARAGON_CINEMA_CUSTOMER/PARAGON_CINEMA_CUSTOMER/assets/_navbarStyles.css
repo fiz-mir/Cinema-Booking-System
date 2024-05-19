@@ -1,0 +1,25 @@
+nav{
+    background: #111111;
+}
+
+.image-container img{
+    height: 90px;
+}
+
+  .sign-in-btn {
+    background: #FFB6C1;
+    color: #111111;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 8px 20px;
+  }
+
+  .sign-in-btn:hover {
+    background: #FF9AA2;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+/* .nav-item a{
+  color: #ffffff;
+} */

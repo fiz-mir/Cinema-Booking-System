@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* (A) ENTIRE PAGE */
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background: #111111;
+  list-style: none;
+}
+
+
+/* (B) SEATS LAYOUT */
+#layout {
+  max-width: 450px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /*to set the seat layout */
+  grid-gap: 4px;
+  margin: 0 auto;
+  /* Centers the layout horizontally */
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: #444451;
+  color: #ffffff;
+  height: 30px;
+  width: 35px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  /* margin-left: 18px; */
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  background: #111111;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+
+#layout .seat {
+  cursor: pointer;
+}
+
+.taken {
+  color: #d9d5d5;
+  background: #7a7777 !important;
+}
+
+.selected {
+  color: #ffffff;
+  background: #d04c73 !important;
+}
+
+/* (C) LEGEND */
+
+
+
+.screen {
+  background: #fff;
+  height: 70px;
+  width: 35%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.container {
+  perspective: 1000px;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-container {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+
+
+
+
+ul {
+  display: flex;
+}
+
+.ulli li {
+  width: 100px;
+  margin-right: 25px;
+  position: relative;
+}
+
+.ulli li:before {
+  content: ">";
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  right: -15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.ulli li:last-child {
+  margin-right: 0;
+}
+
+.ulli li:last-child:before {
+  display: none;
+}
+
+.ulli li a {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.ulli li a .icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto 12px;
+  font-size: 22px;
+  text-align: center;
+  background: #7a7777;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  background: #7a7777;
+}
+
+.ulli li.active a .icon {
+  background: #ffffff;
+  color: #ffffff;
+}
+
+.ulli li.active a {
+  color: #ffffff;
+}
